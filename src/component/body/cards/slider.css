@@ -1,0 +1,44 @@
+.sliderContainer {
+    display: inline-block;
+    /* margin:0;
+    padding:0; */
+    /* background-color: yellow; */
+    position: relative;
+}
+
+.arrow {
+    background-color: #9a0007;
+}
+
+.arrowLeft {
+
+}
+
+.arrowRight {
+
+}
+
+i {
+    position: absolute;
+    top: 49%;
+    border: solid #9a0007;
+    height: 15px;
+    width: 15px;
+    border-width: 0 6px 6px 0;
+    display: inline-block;
+    padding: 3px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    right: -20px;
+}
+
+.left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+    left: -20px;
+}

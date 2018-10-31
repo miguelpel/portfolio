@@ -1,0 +1,35 @@
+.dosisExtraLight {
+    font-family: "Dosis";
+    font-weight: 100;
+   }
+   
+   .dosisLight {
+     font-family: "Dosis";
+     font-weight: 200;
+    }
+   
+   .dosisRegular {
+     font-family: "Dosis";
+     font-weight: 300;
+   }
+   
+   .dosisMedium {
+     font-family: "Dosis";
+     font-weight: 400;
+   }
+   
+   .dosisSemiBold {
+     font-family: "Dosis";
+     font-weight: 500;
+   }
+   
+   .dosisBold {
+     font-family: "Dosis";
+     font-weight: 600;
+   }
+   
+   .dosisExtraBold {
+     font-family: "Dosis";
+     font-weight: 700;
+   }
+   

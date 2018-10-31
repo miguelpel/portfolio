@@ -1,0 +1,19 @@
+.line {
+    display: flex;
+    justify-content: space-between;
+}
+
+.line span {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.line .red {
+     background-color: #9a0007;
+}
+
+.line .grey {
+    background-color: #B3B3B3;
+}

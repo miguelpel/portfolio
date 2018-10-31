@@ -1,0 +1,188 @@
+{ "cards": [
+        {
+            "id": 0,
+            "title": "Xoros",
+            "category": "sites",
+            "tag": "Website",
+            "shortDescription": "Website For The Architecture and Design Agency Xoros",
+            "images": ["./images/xoros/xoros1.png", "./images/xoros/xoros2.png", "./images/xoros/xoros3.png", "./images/xoros/xoros4.png", "./images/xoros/xoros5.png"],
+            "display": "slider",
+            "link": "https://miguelpel.github.io/xoros2/",
+            "gitLink": "https://github.com/miguelpel/xoros2",
+            "description": "A Showcase Website for Architect and Designer Maria Riga. It is made with pure HTML, CSS, and Javascript, and is entirely responsive and Mobile Friendly."
+        }, {
+            "id": 1,
+            "title": "Writer's site",
+            "category": "sites",
+            "tag": "Website",
+            "shortDescription": "Website For y own activities as a Writer",
+            "images": ["./images/theater/th1.png", "./images/theater/th2.png", "./images/theater/th5.png", "./images/theater/th6.png", "./images/theater/th7.png", "./images/theater/th10.png"],
+            "display": "slider",
+            "link": "https://miguelpel.github.io/miguelpelleterat/",
+            "gitLink": "https://github.com/miguelpel/miguelpelleterat",
+            "description": "The Showcase Website for my Activities as a Professional Writer for Theater and Radio. It is made with pure HTML, CSS, and Javascript."
+        }, {
+            "id": 2,
+            "title": "Shapp",
+            "category": "sites",
+            "tag": "Web App",
+            "shortDescription": "Web App Commissioned by the NGO Solidarity Mission",
+            "images": ["./images/shapp/Trainings/2-TrainingView.png", "./images/shapp/Trainings/3.1-UniqueTraining1.png", "./images/shapp/Trainings/4.1-TrainingFormView1.png", "./images/shapp/Organisations/3.8-OrganisationView3Admin.png", "./images/shapp/Manage/3-ManageView.png", "./images/shapp/Manage/4-ManageFormView.png"],
+            "display": "slider",
+            "link": "",
+            "gitLink": "https://github.com/miguelpel/shapp",
+            "description": "The Shapp is a Commissioned Web App realized by the Students of the Social Hackers Academy. I Manage, Supervise, and Assure the Quality of The App."
+        }, {
+            "id": 3,
+            "title": "Square",
+            "category": "sites",
+            "tag": "Native App / Mock Up",
+            "shortDescription": "Short-Story Sharing and Reading Native Android App",
+            "images": ["./images/LitApp/LitAppmockUp4.png", "./images/LitApp/LitAppmockUp1.png"],
+            "display": "slider",
+            "link": "",
+            "gitLink": "",
+            "description": "A Project For A Web and Native App allowing to Share and Read Short Stories on a Phone."
+        }, {
+            "id": 4,
+            "title": "Space-Dog Fights",
+            "category": "games",
+            "tag": "Video Game",
+            "shortDescription": "Pure ES5 Javascript Video Game",
+            "images": ["./images/sdf/sdf2.png", "./images/sdf/sdf3.png", "./images/sdf/sdf4.png", "./images/sdf/sdf6.png"],
+            "display": "slider",
+            "linkIframe": "https://miguelpel.github.io/spacedogfights/sdfgame.html",
+            "link": "https://miguelpel.github.io/spacedogfights/",
+            "gitLink": "https://github.com/miguelpel/spacedogfights",
+            "description": "Space-Dog Fights is a Parodic Game Based on Douglas Adams' work. Each Dog Has a Different Combination of Commonly Used Parameters for the Linear Congruential Generator Algorithm. Here you can see How Microsoft Visual Basic holds against Turbo Pascal or C++."
+        }, {
+            "id": 5,
+            "title": "Hack My Dungeon",
+            "category": "games",
+            "tag": "Pedagogic Video Game",
+            "shortDescription": "Video Game For Learning Javascript",
+            "images": ["./images/hmd/hmd2.png", "./images/hmd/hmd4.png", "./images/hmd/hmd7.png", "./images/hmd/hmd9.png"],
+            "display": "slider",
+            "link": "https://miguelpel.github.io/hackmydungeon/",
+            "gitLink": "https://github.com/miguelpel/hackmydungeon",
+            "description": "Started as A Lesson in OOP Programming, Hack My Dungeon is Now Deing Developped into a full Wed-Based RPG Video Game. The Player needs to Read and Write Javascript Code to Win the Combats and Solve The Dungeons."
+        },  {
+            "id": 6,
+            "title": "DragonBones and Pixi Animation",
+            "category": "games",
+            "tag": "Animation",
+            "shortDescription": "Animation Using DragonBones and Pixi.js",
+            "images": ["./images/anim/dag1.png", "./images/anim/dag2.png", "./images/anim/dag3.png", "./images/anim/dag4.png", "./images/anim/dag7.png", "./images/anim/dag6.png"],
+            "display": "slider",
+            "link": "https://miguelpel.github.io/dragonBones-Pixi/",
+            "gitLink": "https://github.com/miguelpel/dragonBones-Pixi",
+            "description": "Integrating DragonBones Animations Software and Pixi.js Visual Engine Constituted a Challenge. Not Anymore."
+        }, {
+            "id": 7,
+            "title": "Hanged Inc.",
+            "category": "games",
+            "tag": "Narrative Video Game",
+            "shortDescription": "Video Game Based on A Theater Piece",
+            "images": ["./images/hanged/Hanged0.png", "./images/hanged/Hanged2.png", "./images/hanged/Hanged5.png", "./images/hanged/Hanged7.png"],
+            "display": "slider",
+            "link": "",
+            "gitLink": "",
+            "description": "Narrative Game Based on the Theater Piece 'Hanged'. The Player Embodies One of the three Characters of The Piece: Hanged People Who don't Die and Are Bound To Get Along Together. The Game Needs a Custom Game Engine Allowing Animations Synchronized with Text. Under Development."
+        }, {
+            "id": 8,
+            "title": "Caesar",
+            "category": "games",
+            "tag": "Concept Art",
+            "shortDescription": "Concept Art For a Stealth Game",
+            "images": ["./images/assetsbw/Caesar1.png", "./images/assetsbw/Caesar2.png", "./images/assetsbw/Caesar3.png"],
+            "display": "slider",
+            "link": "",
+            "gitLink": "",
+            "description": "Concept Art for the Main Character For A Black and White Stealth Game."
+        }, {
+            "id": 9,
+            "title": "Sprites",
+            "category": "games",
+            "tag": "Pixel Art",
+            "shortDescription": "Pixel Art Sprites For Fantasy Soldiers",
+            "images": ["./images/PixArt/SoldierSpriteRed.png", "./images/PixArt/SoldierSpriteYellow.png"],
+            "display": "slider",
+            "link": "",
+            "gitLink": "",
+            "description": "Always Create Game Assets."
+        }, {
+            "id": 10,
+            "title": "Hanged",
+            "category": "writing",
+            "tag": "Theater Piece",
+            "shortDescription": "Absurd Theater Performance",
+            "images": ["https://res.cloudinary.com/miguel-pelleterat/image/upload/v1525959877/miguel-site/pendus/pendus_1.jpg", "https://res.cloudinary.com/miguel-pelleterat/image/upload/v1525959881/miguel-site/pendus/pendus_2.jpg", "https://res.cloudinary.com/miguel-pelleterat/image/upload/v1525959885/miguel-site/pendus/pendus_3.jpg", "https://res.cloudinary.com/miguel-pelleterat/image/upload/v1525959878/miguel-site/pendus/pendus_4.jpg", "https://res.cloudinary.com/miguel-pelleterat/image/upload/v1525959888/miguel-site/pendus/pendus_5.jpg"],
+            "display": "slider",
+            "link": "https://miguelpel.github.io/miguelpelleterat/pendus.html",
+            "gitLink": "",
+            "description": "Humorous and Absurd Theater Performance Involving That The Performers Stays Hanging For One Hour and a Half. Without Dying, Preferably."
+        }, {
+            "id": 11,
+            "title": "The Trial Of Peer Gynt",
+            "category": "writing",
+            "tag": "Theater Piece",
+            "shortDescription": "Mythomania and Storytelling",
+            "images": ["https://res.cloudinary.com/miguel-pelleterat/image/upload/v1525959809/miguel-site/peergynt/peergynt_1.jpg", "https://res.cloudinary.com/miguel-pelleterat/image/upload/v1525959818/miguel-site/peergynt/peergynt_2.jpg", "https://res.cloudinary.com/miguel-pelleterat/image/upload/v1525959820/miguel-site/peergynt/peergynt_3.jpg", "https://res.cloudinary.com/miguel-pelleterat/image/upload/v1525959818/miguel-site/peergynt/peergynt_4.jpg"],
+            "display": "slider",
+            "link": "https://miguelpel.github.io/miguelpelleterat/peergynt.html",
+            "gitLink": "",
+            "description": "A Familial Drama, Involving a Son Who's a Writer and a Myth-Maniac Father Who Thinks He's Peer Gynt."
+        }, {
+            "id": 12,
+            "title": "The Atomic Diaries",
+            "category": "writing",
+            "tag": "Historical Radio Pieces",
+            "shortDescription": "Telling The Stories of The Women Involved in The Making of The First Atomic Bomb",
+            "images": ["https://res.cloudinary.com/miguel-pelleterat/image/upload/v1525960129/miguel-site/sandiapeak/1.jpg", "https://res.cloudinary.com/miguel-pelleterat/image/upload/v1525960170/miguel-site/sandiapeak/2.jpg", "https://res.cloudinary.com/miguel-pelleterat/image/upload/v1525960138/miguel-site/sandiapeak/3.jpg", "https://res.cloudinary.com/miguel-pelleterat/image/upload/v1525960156/miguel-site/sandiapeak/5.jpg", "https://res.cloudinary.com/miguel-pelleterat/image/upload/v1525960144/miguel-site/sandiapeak/4.jpg"],
+            "display": "slider",
+            "link": "https://miguelpel.github.io/miguelpelleterat/atomics.html",
+            "gitLink": "",
+            "description": "During The WWII, in The United States, Amid The War Projects Which Involved Women, There Was also The Making Of The Atomic Bomb. This is The Story Of Those Women. The Two 45 mn Radio Pieces Are Based On Real Facts, And Were Played Live On The Air."
+        }, {
+            "id": 13,
+            "title": "Kaspar",
+            "category": "writing",
+            "tag": "Theater And Dance Performance",
+            "shortDescription": "Writing And Designed The Set Design For The Performance",
+            "images": ["https://res.cloudinary.com/miguel-pelleterat/image/upload/v1525959419/miguel-site/kaspar/kaspar_1.jpg", "https://res.cloudinary.com/miguel-pelleterat/image/upload/v1525959399/miguel-site/kaspar/kaspar_2.jpg", "https://res.cloudinary.com/miguel-pelleterat/image/upload/v1525959400/miguel-site/kaspar/kaspar_3.jpg", "https://res.cloudinary.com/miguel-pelleterat/image/upload/v1525959414/miguel-site/kaspar/kaspar_4.jpg", "https://res.cloudinary.com/miguel-pelleterat/image/upload/v1525959427/miguel-site/kaspar/kaspar_5.jpg"],
+            "display": "slider",
+            "link": "https://miguelpel.github.io/miguelpelleterat/kaspar.html",
+            "gitLink": "",
+            "description": "Kaspar refers to the true story of Kaspar Hauser: A human being imprisoned and secluded from the world for 16 years and then abruptly had to face civilization. The performance envisions the encounter between civilization and Kaspar."
+        }, {
+            "id": 14,
+            "title": "Le Theatre Parle Au Theatre",
+            "category": "writing",
+            "tag": "Parodic Theatre Reviews",
+            "shortDescription": "One Year of Weekly Theatre Reviews",
+            "images": ["https://res.cloudinary.com/miguel-pelleterat/image/upload/v1525960254/miguel-site/troisminutes/troisminutes_1.jpg", "https://res.cloudinary.com/miguel-pelleterat/image/upload/v1525960254/miguel-site/troisminutes/troisminutes_2.jpg", "https://res.cloudinary.com/miguel-pelleterat/image/upload/v1525960249/miguel-site/troisminutes/troisminutes_3.jpg", "https://res.cloudinary.com/miguel-pelleterat/image/upload/v1525960255/miguel-site/troisminutes/troisminutes_4.jpg", "https://res.cloudinary.com/miguel-pelleterat/image/upload/v1525960266/miguel-site/troisminutes/troisminutes_5.jpg", "https://res.cloudinary.com/miguel-pelleterat/image/upload/v1525960256/miguel-site/troisminutes/troisminutes_6.jpg", "https://res.cloudinary.com/miguel-pelleterat/image/upload/v1525960261/miguel-site/troisminutes/troisminutes_7.jpg"],
+            "display": "slider",
+            "link": "https://miguelpel.github.io/miguelpelleterat/troisminutes.html",
+            "gitLink": "",
+            "description": "A Parodic Serie of Weekly Reviews, Played Live On The Radio."
+        }, {
+            "id": 15,
+            "title": "Joseph",
+            "category": "writing",
+            "tag": "Theater Piece",
+            "shortDescription": "Exploring The Unknown In Humanity",
+            "images": ["https://res.cloudinary.com/miguel-pelleterat/image/upload/v1525959263/miguel-site/joseph/joseph_1.jpg", "https://res.cloudinary.com/miguel-pelleterat/image/upload/v1525959252/miguel-site/joseph/joseph_2.jpg", "https://res.cloudinary.com/miguel-pelleterat/image/upload/v1525959250/miguel-site/joseph/joseph_3.jpg", "https://res.cloudinary.com/miguel-pelleterat/image/upload/v1525959256/miguel-site/joseph/joseph_4.jpg"],
+            "display": "slider",
+            "link": "https://miguelpel.github.io/miguelpelleterat/joseph.html",
+            "gitLink": "",
+            "description": "Commissioned Theater Piece About The Infamous Minister Of Propaganda Joseph Goebbels. The Performance Was Played in The Lyon Deportation and Resistance Memorial Museum"
+        }
+],
+"bio": {
+    "title": "Hi,",
+    "shortDescription": "Exploring The Unknown In Humanity",
+    "image": "Bio image",
+    "link": "https://cargocollective.com/thomaslihn",
+    "gitLink": "https://github.com/miguelpel",
+    "description": "My name is Miguel. I'm a writer and artist who can code!<br>It started out of sheer curiosity, and quickly developped into an addiction for getting things done.<br>I now apply this technological and human knowlege to teach web development and soft skills.<br>Naturally, given my set of skills in aestetics and narration, I develop games whenever I can."
+}}

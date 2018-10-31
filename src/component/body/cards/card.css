@@ -1,0 +1,42 @@
+.card {
+    margin: 20px 10px;
+    padding: 10px;
+    font-family: 'Dosis';
+    font-weight: 300;
+    font-size: 1.2rem;
+    cursor: pointer;
+    width: 400px;
+    min-height: 100px;
+    border: 2px solid #9a0007;
+    background-color: #ffffff;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.3);
+    -moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.3);
+    box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.3);
+    justify-content: center;
+    text-align: center;
+}
+
+.card:hover {
+    border: 3px solid #9a0007;
+    margin: 19px 9px;
+}
+
+.card img {
+    /*  */
+    width: 380px;
+    height: 200px;
+    /* -webkit-filter: grayscale(100%); 
+    filter: grayscale(100%); */
+    object-fit: cover;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.card h3 {
+    font-weight: 300;
+}
+
+.card p {
+    font-weight: 200;
+}

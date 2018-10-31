@@ -1,25 +1,40 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 
+import Header from './component/header/header';
+import Fonts from './component/fonts/fonts';
+import Line from './component/lines/line';
+// import PageBody from './component/body/bodycontainer/bodyContainer';
+import PageBody from './component/body/bodycontainer/animatedBodyContainer';
+// import PageBody from './component/body/bodycontainer/testBody';
+
 class App extends Component {
+  constructor(props){
+    super(props);
+    this.state={
+      filter:''
+    }
+  }
+
+  addFilter = (filter) => {
+    //console.log(filter)
+      this.setState({
+        filter: filter
+      }, () => {console.log(this.state.filter)})
+  }
+
   render() {
+    // console.log(this.state.filter)
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+        <Header
+          addFilter={this.addFilter}
+        />
+        <Line />
+        <PageBody
+          filter={this.state.filter}
+        />
+        {/* <Fonts/> */}
       </div>
     );
   }
