@@ -19,7 +19,7 @@ const NavBar = (props) => {
             >Writing + Theater</div>
             
             <div className="about"
-                onClick={(e) => props.addFilter("bio", e)}
+                onClick={(e) => props.addFilter("about", e)}
             >Who's This Guy</div>
         </div>
     )

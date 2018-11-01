@@ -3,9 +3,11 @@ import React, { Component } from 'react';
 import posed, { PoseGroup } from "react-pose";
 import shuffle from "./shuffle";
 
+import NavBar from '../navbar/navbar';
 import Card from '../cards/otherCard';
 import UniqCard from '../cards/uniqcard';
-import BioCard from '../cards/biocard';
+import Line from '../lines/line';
+import BioCard from '../cards/BioCard';
 import './animatedBodyContainer.css';
 
 const Item = posed.li({
@@ -36,8 +38,9 @@ class PageBody extends Component {
         super(props);
         this.state = {
             isVisible: false,    
-            items: [],
-            filter: this.props.filter,
+            cards: [],
+            bio: null,
+            filter: null,
             uniqCard: null
         };
     }
@@ -47,7 +50,7 @@ class PageBody extends Component {
             .then(response => response.json())
             .then(data => {
                 //create cards
-                let cards = data.cards.map((item, i) => {
+                const cards = data.cards.map((item, i) => {
                     return  (<Card
                                 delay={i}
                                 key={i}
@@ -55,8 +58,11 @@ class PageBody extends Component {
                                 setUniqCard={this.setUniqCard}
                             />)
                 });
+                const bioCard = <BioCard data={data.bio} removeUniqCard={this.removeUniqCard}/>
+                console.log(bioCard);
                 this.setState({
-                    items: shuffle(cards)
+                    cards: shuffle(cards),
+                    bio: bioCard
                 })
             })
             .then(
@@ -69,7 +75,9 @@ class PageBody extends Component {
 
     setUniqCard = (cardId) => {
         // Function used for the onClick
-        let uC = this.state.items.filter(card => {
+        let uC = this.state.cards.filter(card => {
+            console.log("set Uniq Card")
+            console.log(card.id)
             return card.props.data.id === cardId
         })
         console.log(uC[0].props.data.title)
@@ -81,38 +89,52 @@ class PageBody extends Component {
         });
     }
 
-    removeUniqCard = () => {
+    setBioCard = () => {
+        console.log("BioCard")
+        let card = this.state.bio
         this.setState({
-            uniqCard: null
+            uniqCard: card
         });
     }
 
-    setFilter = () => {
-        console.log("set filter")
-        if(this.props.filter !== "" && this.props.filter !== this.state.filter) {
+    removeUniqCard = () => {
+        console.log('remove uniq card')
+        console.log(this.state.filter)
             this.setState({
-                filter: this.props.filter
-            }, this.applyFilter);
-        }
+                uniqCard: null
+            });
     }
+
+    addFilter = (filter) => {
+        //console.log(filter)
+        if (filter === "about") {
+            this.setBioCard();
+            return true
+        }
+        if(filter !== this.state.filter) {
+            this.setState({
+                filter
+              }, this.applyFilter)
+        }
+      }
 
     applyFilter = () => {
         console.log("apply filter")
         let filteredCards;
         let otherCards
         if(this.state.filter !== "") {
-            filteredCards = this.state.items.filter( card => {
+            filteredCards = this.state.cards.filter( card => {
                 return card.props.data.category === this.state.filter
             })
             otherCards = shuffle(
-                this.state.items.filter( card => {
+                this.state.cards.filter( card => {
                     return card.props.data.category !== this.state.filter
                 })
             )
         }
         if(this.state.isVisible) {
             this.setState({
-                items: [...filteredCards, ...otherCards]
+                cards: [...filteredCards, ...otherCards]
             });
         }
     }
@@ -134,11 +156,11 @@ class PageBody extends Component {
     //     this.hide()
     // }
 
-    getItems = () => {
-        this.setFilter();
+    getCards = () => {
+        // this.setFilter();
         return this.state.uniqCard
         ? <Item key="UniqCard">{this.state.uniqCard}</Item>
-        : this.state.items.map((Card, i) => <Item
+        : this.state.cards.map((Card, i) => <Item
         key={Card.key} delay={i}
         >{Card}</Item>)
     }
@@ -149,14 +171,18 @@ class PageBody extends Component {
         // this.setFilter();
             return(
                 <div>
-                <ul className="cardBody">
-                   <PoseGroup
-                        onRest={()=>{console.log("Group complete")}}
-                   >{
-                       isVisible && this.getItems()
-                   }
-                    </PoseGroup>
-                </ul>
+                    <NavBar
+                        addFilter={this.addFilter}
+                    />
+                    <Line />
+                    <ul className="cardBody">
+                    <PoseGroup
+                            onRest={()=>{console.log("Group complete")}}
+                    >{
+                        isVisible && this.getCards()
+                    }
+                        </PoseGroup>
+                    </ul>
                 </div>
             )
     }

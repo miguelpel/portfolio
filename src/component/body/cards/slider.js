@@ -19,7 +19,12 @@ class Slider extends Component {
     getImages = () => {
         let imgs = [];
         this.state.imagesUrls.map((imageUrl, i) => {
-            imgs.push(<img onClick={(e) => {clearInterval(this.state.timer)}} src={imageUrl} alt={`${this.props.title} image ${i}`} />)
+            imgs.push(<img
+                        onClick={(e) => {clearInterval(this.state.timer)}}
+                        src={imageUrl}
+                        alt={`${this.props.title} image ${i}`}
+                        className="uniqImg"
+                      />)
         })
         this.setState({
             images: imgs,
@@ -35,6 +40,10 @@ class Slider extends Component {
         this.setState({
             timer: setInterval(() => (this.changeSlide('right')), 2000)
         })
+    }
+
+    componentWillUnmount = () => {
+        clearInterval(this.state.timer);
     }
 
     changeSlide = (direction) => {

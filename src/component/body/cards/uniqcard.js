@@ -11,7 +11,7 @@ const UniqCard = (props) => {
         if (data.link) {
             links.push(
                 <div key="link" className="linkContainer">
-                    <a href={data.link}>Go there</a>
+                    <a href={data.link}>See Website</a>
                 </div>
             )
         }

@@ -179,10 +179,16 @@
         }
 ],
 "bio": {
+    "id": "bio",
     "title": "Hi,",
     "shortDescription": "Exploring The Unknown In Humanity",
-    "image": "Bio image",
+    "image": "./images/bio/ImageBioBig.jpg",
     "link": "https://cargocollective.com/thomaslihn",
     "gitLink": "https://github.com/miguelpel",
-    "description": "My name is Miguel. I'm a writer and artist who can code!<br>It started out of sheer curiosity, and quickly developped into an addiction for getting things done.<br>I now apply this technological and human knowlege to teach web development and soft skills.<br>Naturally, given my set of skills in aestetics and narration, I develop games whenever I can."
+    "descriptions": [
+        "My name is Miguel. I'm a writer and artist who can code!",
+        "It started out of sheer curiosity, and quickly developped into an addiction for getting things done.",
+        "I now apply this technological and human knowlege to teach web development and soft skills.",
+        "Naturally, given my set of skills in aestetics and narration, I develop games whenever I can."
+    ]
 }}

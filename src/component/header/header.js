@@ -2,7 +2,6 @@ import React from 'react';
 
 import Logo from './logo/logo';
 import Name from './name/name';
-import NavBar from './navbar/navbar';
 
 const Header = (props) => {
     const style = {
@@ -19,9 +18,6 @@ const Header = (props) => {
                 <Logo />
                 <Name />
             </div>
-            <NavBar
-                addFilter={props.addFilter}
-            />
         </div>
     )
 }
