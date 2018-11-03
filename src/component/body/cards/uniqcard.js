@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Slider from './slider';
+import Slider from './slider/slider';
 
 import './uniqcard.css'
 
@@ -11,7 +11,7 @@ const UniqCard = (props) => {
         if (data.link) {
             links.push(
                 <div key="link" className="linkContainer">
-                    <a href={data.link}>See Website</a>
+                    <a href={data.link}>Go to this Website</a>
                 </div>
             )
         }

@@ -52,10 +52,10 @@ const BioCard = (props) => {
             {getDescriptions()}
             {getLinks()}
             <div key="link" className="linkContainer">
-                    <a href="#">See C.V. Online</a>
+                    <a href="https://miguelpel.github.io/resume/" download>See C.V. Online</a>
             </div>
             <div key="link" className="linkContainer">
-                    <a href="#">Download C.V.</a>
+                    <a href="documents/C_V_Miguel_Pelleterat.pdf">Download C.V. in PDF</a>
             </div>
         </div>
     )

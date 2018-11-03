@@ -1,21 +1,20 @@
 .sliderContainer {
     display: inline-block;
-    /* margin:0;
-    padding:0; */
-    /* background-color: yellow; */
-    position: relative;
+    position:relative;
+}
+
+.sliderPicture {
+    display: block;
+    position:relative;
+    height: 402px;
+    width:732px;
+    overflow: hidden;
+    text-align: center;
+    justify-content: center;
 }
 
 .arrow {
     background-color: #9a0007;
-}
-
-.arrowLeft {
-
-}
-
-.arrowRight {
-
 }
 
 i {

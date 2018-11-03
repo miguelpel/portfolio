@@ -4,10 +4,13 @@ import posed, { PoseGroup } from "react-pose";
 import shuffle from "./shuffle";
 
 import NavBar from '../navbar/navbar';
-import Card from '../cards/otherCard';
+import Card from '../cards/card';
 import UniqCard from '../cards/uniqcard';
 import Line from '../lines/line';
-import BioCard from '../cards/BioCard';
+import BioCard from '../cards/biocard';
+
+import { goBackToTopWithEase } from '../../functions/helperFunctions';
+
 import './animatedBodyContainer.css';
 
 const Item = posed.li({
@@ -87,6 +90,7 @@ class PageBody extends Component {
         this.setState({
             uniqCard: card
         });
+        goBackToTopWithEase();
     }
 
     setBioCard = () => {
