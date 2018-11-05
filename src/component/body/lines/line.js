@@ -3,74 +3,66 @@ import React, { Component } from 'react';
 import './line.css';
 
 class Line extends Component {
-    constructor(props){
-        super(props);
-        
-        this.state = {
-            nbr: Math.floor((window.innerWidth / 10) / 2),
-            colSpans: 0,
-            reverse: false
-        }
-        console.log(this.state.wd);
-    }
+	constructor(props) {
+		super(props);
 
-    createSpans = () => {
-        let spans = [];
-        for (let i = 0; i < this.state.nbr; i++) {
-            if(i < this.state.colSpans) {
-                spans.push(this.state.reverse 
-                    ? <span className="grey" key={i}></span>
-                    : <span className="red" key={i}></span>)
-            } else {
-                spans.push(this.state.reverse
-                    ? <span className="red" key={i}></span>
-                    : <span className="grey" key={i}></span>)
-            }
-        }   
-        return spans;
-    }
+		this.state = {
+			nbr: Math.floor(window.innerWidth / 10 / 2),
+			colSpans: 0,
+			reverse: false
+		};
+		// console.log(this.state.wd);
+	}
 
-    updateDimensions = () => {
-        this.setState({nbr: Math.floor((window.innerWidth / 10) / 2)});
-    }
+	createSpans = () => {
+		let spans = [];
+		for (let i = 0; i < this.state.nbr; i++) {
+			if (i < this.state.colSpans) {
+				spans.push(this.state.reverse ? <span className="grey" key={i} /> : <span className="red" key={i} />);
+			} else {
+				spans.push(this.state.reverse ? <span className="red" key={i} /> : <span className="grey" key={i} />);
+			}
+		}
+		return spans;
+	};
 
-    componentWillMount = () => {
-        this.updateDimensions();
-    }
+	updateDimensions = () => {
+		this.setState({ nbr: Math.floor(window.innerWidth / 10 / 2) });
+	};
 
-    componentDidMount = () => {
-        window.addEventListener("resize", this.updateDimensions);
-        this.animateDots();
-    }
+	componentWillMount = () => {
+		this.updateDimensions();
+	};
 
-    componentWillUnmount = () => {
-        window.removeEventListener("resize", this.updateDimensions);
-    }
+	componentDidMount = () => {
+		window.addEventListener('resize', this.updateDimensions);
+		this.animateDots();
+	};
 
-    animateDots = () => {
-        setInterval(this.addDot, 200);
-    }
+	componentWillUnmount = () => {
+		window.removeEventListener('resize', this.updateDimensions);
+	};
 
-    addDot = () => {
-        if (this.state.colSpans >= this.state.nbr) {
-            this.setState({
-                colSpans: 0,
-                reverse: this.state.reverse ? false : true
-            })    
-        } else {
-            this.setState({
-                colSpans: this.state.colSpans + 1
-            })
-        }
-    }
+	animateDots = () => {
+		setInterval(this.addDot, 200);
+	};
 
-    render() {
-        return(
-            <div className="line">
-                {this.createSpans()}
-            </div>
-        )
-    }    
+	addDot = () => {
+		if (this.state.colSpans >= this.state.nbr) {
+			this.setState({
+				colSpans: 0,
+				reverse: this.state.reverse ? false : true
+			});
+		} else {
+			this.setState({
+				colSpans: this.state.colSpans + 1
+			});
+		}
+	};
+
+	render() {
+		return <div className="line">{this.createSpans()}</div>;
+	}
 }
 
 export default Line;
