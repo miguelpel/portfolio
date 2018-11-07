@@ -1,43 +1,64 @@
 .sliderContainer {
-    display: inline-block;
-    position:relative;
+	display: inline-block;
+	position: relative;
 }
 
 .sliderPicture {
-    display: block;
-    position:relative;
-    height: 402px;
-    width:732px;
-    overflow: hidden;
-    text-align: center;
-    justify-content: center;
+	display: block;
+	position: relative;
+	height: 402px;
+	width: 732px;
+	overflow: hidden;
+	text-align: center;
+	justify-content: center;
 }
 
 .arrow {
-    background-color: #9a0007;
+	background-color: #9a0007;
 }
 
 i {
-    position: absolute;
-    top: 49%;
-    border: solid #9a0007;
-    height: 15px;
-    width: 15px;
-    border-width: 0 6px 6px 0;
-    display: inline-block;
-    padding: 3px;
-    border-radius: 5px;
-    cursor: pointer;
+	position: absolute;
+	top: 49%;
+	border: solid #9a0007;
+	height: 15px;
+	width: 15px;
+	border-width: 0 6px 6px 0;
+	display: inline-block;
+	padding: 3px;
+	border-radius: 5px;
+	cursor: pointer;
 }
 
 .right {
-    transform: rotate(-45deg);
-    -webkit-transform: rotate(-45deg);
-    right: -20px;
+	transform: rotate(-45deg);
+	-webkit-transform: rotate(-45deg);
+	right: -20px;
 }
 
 .left {
-    transform: rotate(135deg);
-    -webkit-transform: rotate(135deg);
-    left: -20px;
+	transform: rotate(135deg);
+	-webkit-transform: rotate(135deg);
+	left: -20px;
+}
+
+@media only screen and (max-width: 900px) {
+	.sliderPicture {
+		height: 292px;
+		width: 532px;
+	}
+}
+
+@media only screen and (min-width: 321px) and (max-width: 767px) {
+	.sliderPicture {
+		height: 182px;
+		width: 332px;
+	}
+}
+
+@media only screen and (max-width: 440px) {
+	.sliderPicture {
+		height: 252px;
+		width: 252px;
+	}
 }

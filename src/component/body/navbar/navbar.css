@@ -1,76 +1,102 @@
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    margin-left: 25px;
-    margin-right:25px;
-    margin-bottom: 25px;
+	display: flex;
+	justify-content: space-between;
+	margin-left: 25px;
+	margin-right: 25px;
+	margin-bottom: 25px;
 }
 
 .navbar div {
-    font-family: 'Dosis';
-    font-weight: 300;
-    font-size: 1.5rem;
-    cursor: pointer;
+	font-family: 'Dosis';
+	font-weight: 300;
+	font-size: 1.5rem;
+	cursor: pointer;
 }
 
 .navbar div:hover {
-    padding: 0;
-    color: #9a0007;
-    font-weight: 500;
+	padding: 0;
+	color: #9a0007;
+	font-weight: 500;
 }
 
 .sites {
-    /*  */
-    padding-right: 2px;
-    padding-left: 2px;
+	/*  */
+	padding-right: 2px;
+	padding-left: 2px;
 }
 
 .sites:hover,
 .sites:active {
-    /*  */
-    padding: 0;
-    color: #9a0007;
-    font-weight: 500;
+	/*  */
+	padding: 0;
+	color: #9a0007;
+	font-weight: 500;
 }
 
 .games {
-    /*  */
-    padding-right: 3px;
-    padding-left: 4px;
+	/*  */
+	padding-right: 3px;
+	padding-left: 4px;
 }
 
 .games:hover,
 .games:active {
-    /*  */
-    padding: 0;
-    color: #9a0007;
-    font-weight: 500;
+	/*  */
+	padding: 0;
+	color: #9a0007;
+	font-weight: 500;
 }
 
 .writing {
-    /*  */
-    padding-right: 4px;
-    padding-left: 5px;
+	/*  */
+	padding-right: 4px;
+	padding-left: 5px;
 }
 
 .writing:hover,
 .writing:active {
-    /*  */
-    padding: 0;
-    color: #9a0007;
-    font-weight: 500;
+	/*  */
+	padding: 0;
+	color: #9a0007;
+	font-weight: 500;
 }
 
 .about {
-    /*  */
-    padding-right: 3px;
-    padding-left: 4px;
+	/*  */
+	padding-right: 3px;
+	padding-left: 4px;
 }
 
 .about:hover,
 .about:active {
-    /*  */
-    padding: 0;
-    color: #9a0007;
-    font-weight: 500;
+	/*  */
+	padding: 0;
+	color: #9a0007;
+	font-weight: 500;
+}
+
+@media only screen and (max-width: 900px) {
+	.sliderPicture {
+		height: 292px;
+		width: 532px;
+	}
+}
+
+@media only screen and (min-width: 321px) and (max-width: 767px) {
+	.sliderPicture {
+		height: 182px;
+		width: 332px;
+	}
+}
+
+@media only screen and (max-width: 440px) {
+	.navbar {
+		flex-direction: column;
+		margin-bottom: 0;
+		text-align: right;
+	}
+	.navbar div {
+		font-size: 1.4rem;
+		margin-bottom: 15px;
+	}
 }

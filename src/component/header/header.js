@@ -3,23 +3,17 @@ import React from 'react';
 import Logo from './logo/logo';
 import Name from './name/name';
 
-const Header = (props) => {
-    const style = {
-        padding:'20px 30px'
-    }
+import './header.css';
 
-    const logoNameStyle = {
-        paddingBottom: '30px'
-    }
-
-    return(
-        <div style={style}>
-            <div style={logoNameStyle}>
-                <Logo />
-                <Name />
-            </div>
-        </div>
-    )
-}
+const Header = () => {
+	return (
+		<div className="header_container">
+			<div className="header_content">
+				<Logo />
+				<Name />
+			</div>
+		</div>
+	);
+};
 
 export default Header;

@@ -20,7 +20,7 @@
 	position: relative;
 	top: 20px;
 	z-index: 3;
-	padding: 10px;
+	padding: 5px;
 	font-family: 'Dosis';
 	font-weight: 300;
 	font-size: 1.2rem;
@@ -37,13 +37,14 @@
 }
 
 .uniqcard .closeBtnContainer {
-	/* background-color: yellow; */
 	text-align: right;
 	padding-bottom: 10px;
 	padding-right: 10px;
 }
 
 .uniqcard .closeBtn {
+	margin: 0;
+	padding: 0;
 	text-align: center;
 	line-height: 0.6em;
 	align-self: left;
@@ -51,7 +52,7 @@
 	padding: 0px 5px;
 	font-family: 'Dosis';
 	font-weight: 500;
-	font-size: 3rem;
+	font-size: 2rem;
 	cursor: pointer;
 	color: #9a0007;
 }
@@ -66,24 +67,32 @@
 }
 
 .uniqcard h3 {
+	margin: 20px 0 20px 0;
+	padding: 0;
 	font-weight: 500;
 }
 
-.uniqcard p {
+.uniqcardp {
+	text-justify: inter-word;
+	margin: 10px 0 20px 0;
+	padding: 0 50px;
 	font-weight: 300;
 }
 
-.uniqcard .description {
-	padding: 0 30px;
-	text-align: justify;
+.biocardp {
 	text-justify: inter-word;
+	margin: 10px 0 10px 0;
+	padding: 0;
+	font-weight: 300;
 }
 
 .linkContainer {
-	margin: 20px 0;
+	margin: 10px 0;
 }
 
 a:link {
+	margin: 0;
+	padding: 0;
 	color: #9a0007;
 	font-weight: 400;
 	background-color: transparent;
@@ -122,4 +131,30 @@ a:hover {
 	width: auto;
 	border-radius: 100%;
 	border: 1px solid #ddd;
+}
+
+@media only screen and (min-width: 321px) and (max-width: 767px) {
+	.uniqcard {
+		top: 15px;
+	}
+	.uniqcard .bioImg {
+		height: 150px;
+	}
+	.biocardp,
+	.uniqcardp {
+		font-size: 1.2rem;
+	}
+}
+
+@media only screen and (max-width: 440px) {
+	.uniqcard {
+		top: 5px;
+	}
+	.uniqcard .bioImg {
+		height: 120px;
+	}
+	.biocardp,
+	.uniqcardp {
+		font-size: 1rem;
+	}
 }

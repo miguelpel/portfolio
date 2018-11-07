@@ -38,14 +38,14 @@ class BioCard extends Component {
 		if (this.props.data.link) {
 			links.push(
 				<div key={'link' + i++} className="linkContainer">
-					<a href={this.props.data.link}>See Art Portfolio</a>
+					<a href={this.props.data.link}>See my Art Portfolio</a>
 				</div>
 			);
 		}
 		if (this.props.data.gitLink) {
 			links.push(
 				<div key={'gitlink' + i++} className="linkContainer">
-					<a href={this.props.data.gitLink}>meet on Github</a>
+					<a href={this.props.data.gitLink}>Meet me on Github</a>
 				</div>
 			);
 		}
@@ -60,7 +60,11 @@ class BioCard extends Component {
 		const descriptions = this.props.data.descriptions;
 		if (descriptions) {
 			return descriptions.map((description, i) => {
-				return <p key={'desc' + i}>{description}</p>;
+				return (
+					<p key={'desc' + i} className="biocardp">
+						{description}
+					</p>
+				);
 			});
 		}
 	};
@@ -92,11 +96,11 @@ class BioCard extends Component {
 					{this.getLinks()}
 					<div key="linkOnlineCV" className="linkContainer">
 						<a href="https://miguelpel.github.io/resume/" download>
-							See C.V. Online
+							See my C.V. Online
 						</a>
 					</div>
 					<div key="linkCv" className="linkContainer">
-						<a href="documents/C_V_Miguel_Pelleterat.pdf">Download C.V. in PDF</a>
+						<a href="documents/C_V_Miguel_Pelleterat.pdf">Download my C.V. in PDF</a>
 					</div>
 				</Uc>
 			</div>

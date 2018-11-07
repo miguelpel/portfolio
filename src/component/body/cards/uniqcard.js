@@ -27,7 +27,7 @@ class UniqCard extends Component {
 		if (this.props.data.link) {
 			links.push(
 				<div key="link" className="linkContainer">
-					<a href={this.props.data.link}>Go to this Website</a>
+					<a href={this.props.data.link}>Go to the Website</a>
 				</div>
 			);
 		}
@@ -90,8 +90,7 @@ class UniqCard extends Component {
 					</div>
 					{this.getPicture()}
 					<h3>{data.title}</h3>
-					<p>{data.shortDescription}</p>
-					<p className="description">{data.description}</p>
+					<p className="uniqcardp">{data.description}</p>
 					{this.getLinks()}
 				</Uc>
 			</div>

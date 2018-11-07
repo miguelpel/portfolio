@@ -153,7 +153,7 @@ class PageBody extends Component {
 	render = () => {
 		const { isVisible, uniqCard } = this.state;
 		return (
-			<div>
+			<div className="body_container">
 				<NavBar addFilter={this.addFilter} />
 				<Line />
 				<ul className="cardBody">
