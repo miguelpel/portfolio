@@ -6,7 +6,6 @@ import shuffle from './shuffle';
 import NavBar from '../navbar/navbar';
 import Card from '../cards/card';
 import UniqCard from '../cards/uniqcard';
-import Line from '../lines/line';
 import BioCard from '../cards/biocard';
 
 //import { goBackToTopWithEase } from '../../functions/helperFunctions';
@@ -155,7 +154,6 @@ class PageBody extends Component {
 		return (
 			<div className="body_container">
 				<NavBar addFilter={this.addFilter} />
-				<Line />
 				<ul className="cardBody">
 					<PoseGroup
 						onRest={() => {
