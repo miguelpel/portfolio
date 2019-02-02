@@ -93,8 +93,8 @@
 				"./images/hmd/hmd9.png"
 			],
 			"display": "slider",
-			"link": "https://miguelpel.github.io/hackmydungeon/",
-			"gitLink": "https://github.com/miguelpel/hackmydungeon",
+			"link": "https://miguelpel.github.io/hackmydungeon-original/",
+			"gitLink": "https://github.com/miguelpel/hackmydungeon-original",
 			"description": "Started as a Lesson in Object-Oriented Programming, Hack My Dungeon is Now being Developped into a full Dungeon-Crawler-Map'n Hack-RPG Video Game. The Player navigates an open world and hacks his way out of dungeons by reading the rooms' code and writing Javascript programs."
 		},
 		{
